@@ -1,8 +1,26 @@
 aid: z-trip
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/z-trip.png
 name: Z-Trip
-description: 'Z-Trip is a company surfaced as a portfolio company of dcm-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Z-Trip (在途商旅) is a Shanghai-based enterprise travel and expense management
+  SaaS platform (a corporate travel management company, or TMC) serving medium and large
+  Chinese enterprises. It unifies booking of flights, hotels, trains, car rentals, visas,
+  insurance, and MICE events with automated expense reporting, budget and policy controls,
+  monthly invoicing, and up to 45 days of advance funding. The platform integrates with
+  corporate OA, ERP, cost-control, and HR systems and offers single sign-on, aggregating
+  supplier inventory from 200+ airlines and millions of hotels for 1,700+ enterprise clients.
+  Surfaced from the dcm-ventures portfolio; no public first-party API/developer platform is
+  published, though third-party integration connectors and SSO exist.'
 url: https://raw.githubusercontent.com/api-evangelist/z-trip/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Consumer
+- Travel
+- Business Travel
+- Expense Management
+- Travel Management
+- SaaS
+- Enterprise
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +50,12 @@ maintainers:
 common:
 - type: Website
   url: http://www.z-trip.cn/
+- type: Login
+  url: https://passport.z-trip.cn/login
+- type: DomainSecurity
+  url: security/z-trip-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
